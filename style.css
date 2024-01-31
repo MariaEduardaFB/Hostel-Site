@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #fff;
+  }
+
+.img-morro{
+    width: 100%;
+}
+
+.book{
+    background-color: red;
+    width: 10rem;
+    height: 10rem;
+
+}
