@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="content">
-        <img class='img-morro'src="Morro-Branco-3.jpg">
-      </div>
-      <div class="book">
-        
-      </div>
+  <header>  
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Reserve agora</a></li>
+
+        </ul>
+        <div class="buttons">
+            <button id="darkModeButton">Modo Escuro</button>
+            <button id="languageButton">Idioma</button>
+        </div>
+    </nav>
+    <section id="pagina-inicial" class="pagina-inicial">
+      <img class='img-pag-inicial' src="hostel.jpg">
+      <div class="overlay">
+        <h1>Hostel Di Castela</h1>
+      </div> 
+      
+    </section>
+    <script src="scripts.js"></script>
 </body>
 </html>
