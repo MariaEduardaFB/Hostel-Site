@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Hostel Di Castela</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,21 +13,44 @@
             <li><a href="#">Página Inicial</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
+            <li><a href="#">Quartos</a></li>
+            <li><a href="#">Serviços</a></li>
             <li><a href="#">Reserve agora</a></li>
 
         </ul>
-        <div class="buttons">
-            <button id="darkModeButton">Modo Escuro</button>
-            <button id="languageButton">Idioma</button>
-        </div>
+        <div class="language-dropdown-container">
+          <button id="languageButton">Idioma</button>
+          <div class="languageDropdown dropdown-content">
+              <a href="#" onclick="changeLanguage('pt-br')">Português-BR</a>
+              <a href="#" onclick="changeLanguage('en')">Inglês</a>
+              <a href="#" onclick="changeLanguage('es')">Espanhol</a>
+          </div>
+      </div>
+      
     </nav>
     <section id="pagina-inicial" class="pagina-inicial">
       <img class='img-pag-inicial' src="hostel.jpg">
       <div class="overlay">
-        <h1>Hostel Di Castela</h1>
+        <h1 id="pageTitle"> Bem-Vindo ao Hostel Di Castela</h1>
       </div> 
-      
     </section>
-    <script src="scripts.js"></script>
+
+    <section id="sobre" class="sobre-section">
+      <div class="sobre">
+          <h1 class="titulo-sobre">Sobre</h1>
+          <p id="sobreTitle" class="sobre-h2">Sejam todos bem-vindos ao nosso Hostel! Uma família espanhola, formada por um irmão e duas irmãs, 
+              decidiu trazer um pouco de Segóvia para o Brasil. Unidos pela cultura e pela paixão por viagens, 
+              a ideia do Hostel nasceu durante uma peregrinação no Caminho de Santiago de Compostela e se concretizou 
+              após uma inspiradora visita a Morro Branco. Estamos ansiosos para compartilhar nossa hospitalidade e 
+              criar memórias inesquecíveis com vocês.</p>
+      </div>
+  </section>
+
+    <section id="quartos-section">
+      <div class="quartos">
+        <h1 class="titulo-quarto">Quartos</h1>
+      </div>
+    </section>
+    <script src="index.js"></script>
 </body>
 </html>
